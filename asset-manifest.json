@@ -1,15 +1,15 @@
 {
   "files": {
-    "main.css": "/NVR/static/css/main.57f5cc6e.css",
+    "main.css": "/NVR/static/css/main.34cb1964.css",
     "main.js": "/NVR/static/js/main.29a49e53.js",
     "static/js/787.23170c61.chunk.js": "/NVR/static/js/787.23170c61.chunk.js",
     "index.html": "/NVR/index.html",
-    "main.57f5cc6e.css.map": "/NVR/static/css/main.57f5cc6e.css.map",
+    "main.34cb1964.css.map": "/NVR/static/css/main.34cb1964.css.map",
     "main.29a49e53.js.map": "/NVR/static/js/main.29a49e53.js.map",
     "787.23170c61.chunk.js.map": "/NVR/static/js/787.23170c61.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.57f5cc6e.css",
+    "static/css/main.34cb1964.css",
     "static/js/main.29a49e53.js"
   ]
 }
