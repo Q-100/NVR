@@ -1,15 +1,15 @@
 {
   "files": {
-    "main.css": "/Q-100/NVR/static/css/main.ad9c3395.css",
-    "main.js": "/Q-100/NVR/static/js/main.4d970c87.js",
-    "static/js/787.23170c61.chunk.js": "/Q-100/NVR/static/js/787.23170c61.chunk.js",
-    "index.html": "/Q-100/NVR/index.html",
-    "main.ad9c3395.css.map": "/Q-100/NVR/static/css/main.ad9c3395.css.map",
-    "main.4d970c87.js.map": "/Q-100/NVR/static/js/main.4d970c87.js.map",
-    "787.23170c61.chunk.js.map": "/Q-100/NVR/static/js/787.23170c61.chunk.js.map"
+    "main.css": "/NVR/static/css/main.ad9c3395.css",
+    "main.js": "/NVR/static/js/main.a8e757fe.js",
+    "static/js/787.23170c61.chunk.js": "/NVR/static/js/787.23170c61.chunk.js",
+    "index.html": "/NVR/index.html",
+    "main.ad9c3395.css.map": "/NVR/static/css/main.ad9c3395.css.map",
+    "main.a8e757fe.js.map": "/NVR/static/js/main.a8e757fe.js.map",
+    "787.23170c61.chunk.js.map": "/NVR/static/js/787.23170c61.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.ad9c3395.css",
-    "static/js/main.4d970c87.js"
+    "static/js/main.a8e757fe.js"
   ]
 }
