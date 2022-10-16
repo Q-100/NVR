@@ -1,20 +1,30 @@
 import "./App.css";
 import infoData from "./data.js";
 import React, { useState, useEffect } from "react";
-// 제목밑 구분선 사이 간격 줄이기, 굵기 늘리기
-// 소셜미디어 구분선 중앙으로 옮기기\
-// 컨택트 밑 주소 중앙으로 옮기기
-// 버튼 기능 넣기, SNS 링크 연결하기
-// 그외 디테일잡기
+import Calendar from "react-calendar";
+import "./Calendar.css"; // css import
+import moment from "moment";
+import Modal from "./Modal.js";
 
 function App() {
   const [info, infoChange] = useState(infoData);
+  const [value, onChange] = useState(new Date());
   let [alert, alertSet] = useState(true);
   useEffect(() => {
     let timer = setTimeout(() => {
       alertSet(false);
-    }, 5000);
+    }, 4000);
   });
+  const [modalOpen, setModalOpen] = useState(false);
+
+  const openModal = () => {
+    console.log("열림");
+    setModalOpen(true);
+  };
+  const closeModal = () => {
+    console.log("닫힘");
+    setModalOpen(false);
+  };
   return (
     <div className="App">
       {alert === true ? (
@@ -23,27 +33,28 @@ function App() {
         <div className="mainContainer">
           <Profile />
           <Info info={info} />
-          <Schedule />
+          <Schedule value={value} onChange={onChange} />
+          <button onClick={openModal} className="scheduleButton">
+            일정 잡기
+          </button>
+          <Modal
+            open={modalOpen}
+            close={closeModal}
+            header="일정 잡기"
+            value={value}
+          ></Modal>
           <Contact info={info} />
-          <SocialMedia />
+          {/* <SocialMedia /> */}
           <Footer />
         </div>
       )}
     </div>
-    // <div className="mainContainer">
-    //   <Profile />
-    //   <Info info={info} />
-    //   <Schedule />
-    //   <Contact info={info} />
-    //   <SocialMedia />
-    //   <Footer />
-    // </div>
   );
 }
 function Video() {
   return (
     <video muted autoPlay playsInline className="video">
-      <source src="/img/Truben_1.mp4" type="video/mp4" />
+      <source src="Truben_1.mp4" type="video/mp4" />
     </video>
   );
 }
@@ -51,10 +62,18 @@ function Video() {
 function Profile() {
   return (
     <div className="profile">
-      <img src="img/image 7.png" alt="" className="img" />
-      <img src="img/profile_img.png" className="profile_img" alt="" />
+      <a href="https://www.trubeninvestment.com/">
+        <img src="img/image 12.png" alt="" className="img" />
+      </a>
+      <img src="img/profile_main.png" className="profile_img" alt="" />
       <h1>홍경근</h1>
-      <h4>Chairman</h4>
+      <h4>회장</h4>
+      <a
+        className="contactsButton"
+        href="https://firebasestorage.googleapis.com/v0/b/nvr-front.appspot.com/o/users%2F-NCIeauFPHq3yYGCz52G%2Fcontact.vcf?alt=media&token=b59abe93-09de-4a52-b3a6-f83bcdf4f89d"
+      >
+        연락처 저장
+      </a>
     </div>
   );
 }
@@ -77,12 +96,21 @@ function Info(props) {
     </div>
   );
 }
-function Schedule() {
+function Schedule(props) {
+  // const [value, onChange] = useState(new Date());
+  const value = props.value;
+  const onChange = props.onChange;
   return (
     <div className="schedule">
       <h2>Schedule</h2>
       <hr style={{ width: "20vw" }} />
-      <div>Calendar space</div>
+      <div>
+        <Calendar
+          onChange={onChange}
+          value={value}
+          formatDay={(locale, date) => moment(date).format("DD")}
+        />
+      </div>
     </div>
   );
 }
@@ -116,7 +144,7 @@ function SocialMedia() {
 function Footer() {
   return (
     <div className="footer">
-      <a href="https://agency-nvr.web.app/">
+      <a href="https://nvr-front.web.app/">
         <img src="img/NVR_logo.png" alt="" />
       </a>
       <p>

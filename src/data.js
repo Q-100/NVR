@@ -8,9 +8,9 @@ export default [
 
   {
     id: 1,
-    content: "010-1234-5678",
+    content: "+82 10-4767-1100",
     src: "img/Frame 35.png",
-    button: "tel:02-1234-5678",
+    button: "tel:010-4767-1100",
   },
 
   {

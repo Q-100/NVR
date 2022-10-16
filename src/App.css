@@ -9,6 +9,11 @@ background: #FFFFFF;
   height: auto;
   width: auto;
 }
+.img{
+  margin-bottom: 25px;
+  width: auto;
+  height: 89px;
+}
 
 .video{
   width: 100%;
@@ -20,10 +25,10 @@ background: #FFFFFF;
   justify-content: center;
   flex-direction: column;
   align-items: center;
-  margin-bottom: 30px;
+  margin-bottom: 40px;
 }
 .profile>h1{
-  letter-spacing: 7px;
+  letter-spacing: 1px;
   margin-bottom: 0px;
 }
 .profile>h4{
@@ -33,6 +38,19 @@ background: #FFFFFF;
   width: 192px;
   height: auto;
   margin-bottom: 10px;
+}
+.contactsButton{
+  display: block;
+  width: 115px;
+  height: auto;
+  background: #5691ff;
+  padding: 10px;
+  text-align: center;
+  border-radius: 5px;
+  color: white;
+  font-weight: bold;
+  line-height: 25px;
+  text-decoration: none;
 }
 .info{
   display: flex;
@@ -57,8 +75,6 @@ background: #FFFFFF;
   margin-right: 10px;
 }
 
-
-
 .schedule{
   margin-top: 100px;
   display: flex;
@@ -72,7 +88,7 @@ background: #FFFFFF;
   margin-bottom: 40px;
 }
 .contact{
-  margin-top: 100px;
+  margin-top: 30px;
   display: flex;
   justify-content: center;
   flex-direction: column;
@@ -148,4 +164,22 @@ iframe{
   color: #8A8A8A;
   text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
   margin-top: 0px;
+}
+.scheduleButton{
+  display: flex;
+  justify-content:center ;
+  align-items: center;
+  width: 100vw;
+  background-color: #5691ff;
+  color: white;
+  font-weight: bold;
+  height: 50px;
+  border-radius: 30px;
+  margin-top: 30px;
+  margin-bottom: 100px;
+  
+}
+.scheduleButton:active{
+  box-shadow: inset -.3rem -.1rem 1.4rem  #FBFBFB, inset .3rem .4rem .8rem #BEC5D0; 
+    cursor: pointer;
 }
