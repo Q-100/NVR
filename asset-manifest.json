@@ -1,15 +1,15 @@
 {
   "files": {
-    "main.css": "/NVR/static/css/main.e3f9e452.css",
-    "main.js": "/NVR/static/js/main.a0d4ef31.js",
-    "static/js/787.23170c61.chunk.js": "/NVR/static/js/787.23170c61.chunk.js",
-    "index.html": "/NVR/index.html",
-    "main.e3f9e452.css.map": "/NVR/static/css/main.e3f9e452.css.map",
-    "main.a0d4ef31.js.map": "/NVR/static/js/main.a0d4ef31.js.map",
-    "787.23170c61.chunk.js.map": "/NVR/static/js/787.23170c61.chunk.js.map"
+    "main.css": "/static/css/main.e3f9e452.css",
+    "main.js": "/static/js/main.55571ba3.js",
+    "static/js/787.23170c61.chunk.js": "/static/js/787.23170c61.chunk.js",
+    "index.html": "/index.html",
+    "main.e3f9e452.css.map": "/static/css/main.e3f9e452.css.map",
+    "main.55571ba3.js.map": "/static/js/main.55571ba3.js.map",
+    "787.23170c61.chunk.js.map": "/static/js/787.23170c61.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.e3f9e452.css",
-    "static/js/main.a0d4ef31.js"
+    "static/js/main.55571ba3.js"
   ]
 }
