@@ -28,9 +28,13 @@ function App() {
   };
   return (
     <div className="App">
-      {window.location.replace(
+      {/* {window.location.replace(
         "https://nvrkr.com/profile/Z3pwtExXPTLBMncEtIKX?custom=truben"
-      )}
+      )} */}
+      {
+        (window.location.href =
+          "https://nvrkr.com/profile/Z3pwtExXPTLBMncEtIKX?custom=truben")
+      }
     </div>
   );
 }
