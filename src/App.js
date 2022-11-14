@@ -5,6 +5,7 @@ import Calendar from "react-calendar";
 import "./Calendar.css"; // css import
 import moment from "moment";
 import Modal from "./Modal.js";
+import { Routes, Route, Link } from "react-router-dom";
 
 function App() {
   const [info, infoChange] = useState(infoData);
@@ -27,26 +28,8 @@ function App() {
   };
   return (
     <div className="App">
-      {alert === true ? (
-        <Video />
-      ) : (
-        <div className="mainContainer">
-          <Profile />
-          <Info info={info} />
-          <Schedule value={value} onChange={onChange} />
-          <button onClick={openModal} className="scheduleButton">
-            일정 잡기
-          </button>
-          <Modal
-            open={modalOpen}
-            close={closeModal}
-            header="일정 잡기"
-            value={value}
-          ></Modal>
-          <Contact info={info} />
-          {/* <SocialMedia /> */}
-          <Footer />
-        </div>
+      {window.location.replace(
+        "https://nvrkr.com/profile/Z3pwtExXPTLBMncEtIKX?custom=truben"
       )}
     </div>
   );
